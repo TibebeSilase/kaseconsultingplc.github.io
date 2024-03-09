@@ -86,12 +86,11 @@
 .hero{
     width:100%;
     height: 550px;   
-    background-image: url(https://tibebesilase.github.io/kaseconsultingplc.github.io/siteAssets/images/kaseLogo.jpg);
-    background-attachment:fixed;
+   background-attachment:fixed;
     background-size: cover;
     display: flex;
    align-items: center;
-   justify-content: center
+   justify-content: space-between;
     
 }
 
