@@ -86,7 +86,7 @@
 .hero{
     width:100%;
     height: 550px;   
-    background-image: url(siteAssets/images/kaseLogo.jpg);
+    background-image: url("siteAssets/images/kaseLogo.jpg");
     background-attachment:fixed;
     background-size: cover;
     display: flex;
