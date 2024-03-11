@@ -91,15 +91,16 @@
     background-image: url(https://tibebesilase.github.io/kaseconsultingplc.github.io/siteAssets/images/kaseLogo.jpg);
     background-attachment:fixed;
     background-size: cover;
-    display: flex;
-   align-items: center;
-   justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white; 
     
 }
 
 .hero h1{
-    font-size: xx-large;
-    
+  font-size: 72px;
+ 
 }
 
 section {
