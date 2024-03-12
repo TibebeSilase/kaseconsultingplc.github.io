@@ -10,24 +10,34 @@
     
 }
 
+body{
+
+}
+
+a{
+  text-decoration: none;
+  color:rgb(255, 255, 255)
+}
+
+
 .header {
-    background-color:grey;
-    display:flex;  
-    justify-content: space-between; 
-    align-items: center;
-    padding-top: 2px;   
-    height: 80px;
-   
+  padding-top: 2px;
+  background:var(--site-color);
+  display:flex;  
+  justify-content: space-between; 
+  align-items: center;     
+  height: 80px;
+  box-shadow: 0px 3px 5px var(--site-color);
+  position:sticky;
+  top:0px;
+  opacity:.9;    
 }
 
 .header li {
     list-style: none;
 }
 
- a{
-    text-decoration: none;
-    color:rgb(255, 255, 255)
-}
+
 
 .header .brand-area {
     
@@ -37,7 +47,7 @@
 
 .header #logo img{
     height: 70px;
-    margin-right: 3px;
+    margin-right: 7px;
 }
 
 .header #brand-name{
@@ -85,6 +95,10 @@
 
 
 
+
+/* -------------------------------SECTION: ABOVE FOLD----------------------------------------- */
+
+
 .hero{
     width:100%;
     height: 550px;   
@@ -95,91 +109,97 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:black; 
-    
+    color:rgb(0, 0, 0);     
 }
 
 .hero h1{
-  font-size: 72px;
- 
+  font-size: 72px; 
 }
 
-section {
-    margin: 25px 0; 
-}
+
+/* ------------------------------------SECTION: COMPANY PROFILE----------------------------- */
+
 
 .company-profile {
-    background-color: rgb(243, 233, 221);
+   
+    margin:25px 3px;
+    border-radius: 5px;
+    background:linear-gradient( rgb(200, 224, 232), var(--site-color));
 }
 
 .company-profile-head{   
-    padding:10px;    
+    padding:25px;  
+    border-top: 1px  solid;  
     color:var(--site-color);
-    /* background-color: var(--site-color);  */
     font-size: 38px;
     font-weight: 800;
     line-height: 53.2px;
     text-align: center;
     text-size-adjust: 100%;
-    border:2px solid var(--site-color)
+    text-decoration: underline;
+    text-underline-offset: 1rem;   
   
 }
 
 .company-profile-content {
     display:flex;  
-    margin:0 10% ;   
+    justify-content:center;
 }
 
 .company-profile-content-item {
-    padding: 5px;
-    border: 1px solid;
-    border-radius: 5px;
-    margin: 5px;   
-    font-size: large;    
-    
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: var(--site-color);
+  margin:5px;    
+}
+
+.company-profile-content-item h2{
+  text-align: center;
+}
+
+.company-profile-content-item img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+} 
+
+
+
+.company-profile-content-item p{
+  color:black;
+  font-size: 1.5rem;
+}
+
+.company-profile-content-item  {
+  display:flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  margin-bottom: 2rem;
 }
 
 
-#introduction {
-   text-align: center;
-    
-}
+/* -------------------------------------SECTION: SERVICES--------------------------------- */
 
-#introduction article{
-    text-align: left;
-     
- }
-
-
-.company-profile-content-item .vision,.mission  {
-   
-   border-radius: 5px;
-   display:flex;
-   flex-direction: column;
-   margin:5px;
-   align-items: center;        
-}
 
 .services{
-    background-color: white; 
+  background:linear-gradient( rgb(200, 224, 232), var(--site-color));
 }
 
 
 .services-head{   
-    margin-bottom: 10px;
-    background: var(--site-color);
-    color:white;
-    font-size: 38px;
-    font-weight: 800;
-    line-height: 53.2px;
-    text-align: center;
-    text-size-adjust: 100%;
-    border:2px solid var(--site-color);
-  }
+  margin-bottom: 10px;
+  color:white;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 53.2px;
+  text-align: center;
+  text-size-adjust: 100%;
+  border:2px solid var(--site-color);
+}
 
 
 
-  .services-content{
+.services-content{
     display:flex;   
     flex-direction: column;
     justify-content: space-between; 
@@ -214,36 +234,38 @@ section {
     padding-left:15px;
   }
 
+
+
+
+  /* -------------------------------------SECTION: CORE VALUES--------------------------------- */
+
   .core-values{
-    background-color: rgb(101, 84, 84);
-    color:white;
+   
+    color:rgb(1, 1, 1);
     padding-bottom: 15px;
     margin-top: 50px;
   }
 
   .core-values-content {
-    display: flex;
-    
+    display: flex;    
   }
 
   .core-values-head {
+    margin-bottom: 10px;
     text-align: center;
     font-size: xx-large;
-    border-bottom: 2px solid white;
-    padding-bottom: 4px;
-    margin-bottom: 30px;
+    text-decoration: underline;
+
   }
 
   .core-values-content-item {
-    border-left: 2px solid white;
-    padding-left: 5px;
-    padding:0 15px;
-    
+   padding-left:20px;
+    border-left: 1px solid var(--site-color)
   }
 
   .core-values-content-item h3{
     padding-bottom: 10px;
-    text-align: center;
+    text-align:left;
     font-size: large;
   }
   
@@ -325,6 +347,26 @@ section {
         height: 45px;
         margin-right: 3px;
     }
+
+
+
+/* ---------------------------------NOT SMART ENOUGH (MODIFY-felx-wrap:wrap properties)------------------------------------ */
+.company-profile-content {
+    display:flex;  
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+
+  .services-content-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .core-values-content {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
 
     
 
