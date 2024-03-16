@@ -135,7 +135,6 @@
 
 .company-profile-head{   
     padding:25px;  
-    border-top: 1px  solid; 
     border-bottom: 1px  solid; 
     color:var(--site-color);
     font-size: 38px;
@@ -188,7 +187,8 @@
 
 
 .services{
-  background:linear-gradient( rgb(200, 224, 232), var(--site-color));
+  background: rgb(200, 224, 232);
+  margin: 0 10%;
 }
 
 
@@ -200,44 +200,50 @@
   line-height: 53.2px;
   text-align: center;
   text-size-adjust: 100%;
-  border:2px solid var(--site-color);
-}
+ }
 
 
 
 .services-content{
     display:flex;   
     flex-direction: column;
-    justify-content: space-between; 
-      
+    justify-content: space-between;       
   }
 
   .services-content-group {
     display:flex;
+    
   } 
 
   .services-content-group-item {
     flex-basis: 100%;
     border:2px solid var(--site-color);
     border-radius: 5px;
-    margin: 10px;
+    margin: 20px 10px;
     font-size: large;
+    padding: 10px;
   }
 
   .services-content-group-item h1 {
-    background-color: var(--site-color);
-    color:white;
+    background:linear-gradient( rgb(200, 224, 232), var(--site-color));
+
+    color:rgb(6, 4, 38);
     text-align: center;
     
   }
 
   .services-content-group-item  h4{
     margin-left:5px;
+    padding-bottom: 20px;
   }
 
   .services-content-group-item li{
     margin-left:15px;
     padding-left:15px;
+    padding-bottom: 15px;
+    list-style:square;   
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
 
@@ -249,7 +255,7 @@
    
     color:rgb(1, 1, 1);
     padding-bottom: 15px;
-    margin-top: 50px;
+    margin: 50px 10%;
   }
 
   .core-values-content {
@@ -265,8 +271,11 @@
   }
 
   .core-values-content-item {
-   padding-left:20px;
-    border-left: 1px solid var(--site-color)
+    padding:20px;
+    border: 1px solid var(--site-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    margin:5px;
   }
 
   .core-values-content-item h3{
@@ -280,6 +289,7 @@
   }
 
   .why-choose-kase {
+    margin:50px 10%;
     background-color:rgb(243, 233, 221) ;
     display:flex;
     flex-direction: column;
@@ -289,6 +299,10 @@
   .why-choose.kase-head,p {
     margin: 0 10%;
     font-size: large;
+  }
+
+  .team-profile, .founders, .affiliate-members{
+    margin:50px 10%;
   }
 
   table{
