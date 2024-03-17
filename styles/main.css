@@ -10,6 +10,15 @@
     
 }
 
+body{
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
 
 
 
@@ -22,7 +31,8 @@
   align-items: center;     
   height: 80px;
   box-shadow: 0px 3px 5px var(--site-color);
-  position:sticky;
+  position:fixed;
+  width:100%;
   top:0px;
   opacity:.9;   
  
@@ -104,11 +114,9 @@
 
 
 .hero{
-
-    width:100%;
     height: 550px;   
     background-image: url(https://tibebesilase.github.io/kaseconsultingplc.github.io/siteAssets/images/kaseLogo.jpg);
-    background-attachment:fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     display:flex;
     flex-direction: column;
@@ -188,7 +196,7 @@
 
 .services{
   background: rgb(200, 224, 232);
-  margin: 0 10%;
+  
 }
 
 
@@ -205,30 +213,28 @@
 
 
 .services-content{
-    display:flex;   
-    flex-direction: column;
-    justify-content: space-between;       
+    display:flex; 
+    justify-content: space-between;   
+    flex-wrap: wrap; 
+    padding:10px;     
   }
 
-  .services-content-group {
-    display:flex;
-    
-  } 
+ 
 
   .services-content-group-item {
-    flex-basis: 100%;
+    width:49%;
     border:2px solid var(--site-color);
     border-radius: 5px;
-    margin: 20px 10px;
+    margin-bottom: 15px;    
     font-size: large;
-    padding: 10px;
+    
   }
 
   .services-content-group-item h1 {
     background:linear-gradient( rgb(200, 224, 232), var(--site-color));
-
     color:rgb(6, 4, 38);
     text-align: center;
+    padding:10px;
     
   }
 
@@ -333,7 +339,11 @@
 
 
 
-
+footer{
+  margin-top: 20px;  
+  background-color:var(--site-color);
+  color:white
+}
 
 
 
@@ -383,9 +393,14 @@
     flex-wrap: wrap;
   }
 
-  .services-content-group {
+
+
+  .services-content-group-item  {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;   
+    justify-content: center;
+    width:100%  
+   
   }
 
   .core-values-content {
